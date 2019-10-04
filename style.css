@@ -1,0 +1,51 @@
+body {
+	text-align: center;
+	background-color: pink;
+	display: block;
+}
+
+h1 {
+	font-size: 4vw;
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+.buttonwrap {
+	display: flex;
+	text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+button {
+	font-size: 40px;
+	margin-left: 20px;
+	width: 30%;
+	height: 10%;
+	padding: 10px;
+	border: 2px solid black;
+	font-family: 'Lexend Deca', sans-serif;
+}
+	
+button:hover {
+	border-color: red;
+}
+.submit-button {
+	background-color: orange;
+}
+
+
+.selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+@media only screen and (max-width: 800px) {
+	.selection {
+		display: block;
+	}
+	button {
+		width: 100%;
+		font-size: 20px;
+	}
+}

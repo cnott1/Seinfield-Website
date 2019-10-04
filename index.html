@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>What's your favorite ice cream flavor?</h1>
+	<div class="selection"> 
+			<button type="button" onclick="setButton(this)">Vanilla</button>
+			<button type="button" onclick="setButton(this)">Chocolate</button>
+			<button type="button" onclick="setButton(this)">Strawberry</button>
+	</div>
+	<h1>What is your zodiac sign?</h1>
+	<div class="selection"> 
+			<button type="button" onclick="setButton(this)">Star</button>
+			<button type="button" onclick="setButton(this)">Square</button>
+			<button type="button" onclick="setButton(this)">Parabola</button>
+	</div>
+	<h1>Your friends describe you as:</h1>
+	<div class="selection"> 
+			<button type="button" onclick="setButton(this)">Nice</button>
+			<button type="button" onclick="setButton(this)">Friendly</button>
+			<button type="button" onclick="setButton(this)">Wholehearted</button>
+	</div>
+	<br/>
+	<a href="final result.html"><button class ="submit-button" type="button">Who am I?</button></a>
+</body>
+
+<script>
+function setButton(chosenButton) {
+	for(child in chosenButton.parentElement.childNodes){
+		chosenButton.parentElement.childNodes[child].className = "";
+	}
+	chosenButton.className = "selected";
+}
+</script>
+</html>
